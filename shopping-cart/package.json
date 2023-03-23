@@ -1,13 +1,13 @@
 {
   "homepage": "http://numankhan4.github.io/Marketplace-Mobile-App-React",
-  "name": "shopping-cart-app",
+  "name": "marketplace-mobile-app-react",
   "private": true,
   "version": "1.0.0",
   "author": "Numan Ul Haq",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
