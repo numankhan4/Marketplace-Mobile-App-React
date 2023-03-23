@@ -98,3 +98,6 @@ ul {
   background-color: #ffffff;
   z-index: 9999;
 }
+ .app-main{
+  overflow: hidden;
+}

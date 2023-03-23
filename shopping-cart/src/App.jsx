@@ -1,15 +1,14 @@
-import React, {useState } from "react";
+import React from "react";
 import { NavbarTop, NavbarBottom } from "./components/Navbar";
 import Store from "./pages/Store";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Cart from "./pages/Cart";
-import { Layout, Input, Col, Row, ConfigProvider } from "antd";
+import { Layout, ConfigProvider } from "antd";
 const { Header } = Layout;
 import { StyleProvider } from "@ant-design/cssinjs";
 import { AnimatePresence } from "framer-motion";
-import {motion} from 'framer-motion';
 
 function App() {
   
@@ -17,7 +16,7 @@ function App() {
     <div className="app-main">
      
       <AnimatePresence mode="wait">
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <ConfigProvider
           theme={{
             token: {
