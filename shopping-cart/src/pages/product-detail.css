@@ -1,0 +1,269 @@
+.product-detail{
+    padding: 20px;
+}
+.product-image{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+    min-height: 250px;
+}
+.product-type{
+    color: #8d8d8d;
+    margin-bottom: 8px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.product-reputation{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+    gap: 20px;
+    color: #8d8d8d;
+}
+.product-reputation li span{vertical-align: middle;}
+.product-reputation li:not(:first-child){
+    position: relative;
+    padding-left: 15px;
+}
+.product-reputation li:not(:first-child)::before{
+    content: '';
+    display: block;
+    width:5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #8d8d8d;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%)
+}
+
+.product-detail-tabs{
+    margin-bottom: 30px;
+}
+
+.product-description p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.product-description{
+    margin-bottom: 40px;
+}
+
+.seller-information {
+    margin-bottom: 40px;
+}
+.ant-layout .seller-information  .ant-list-item {
+    flex-wrap: wrap; 
+}
+.ant-layout .seller-information  .ant-list-item-meta{
+    flex: 1 1 100% !important;
+    width: 100%;
+}
+.seller-info-action{
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+
+.chart {
+  /* width: 500px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chart .rate-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 30px;
+  padding: 20px 0;
+  padding: 10px;
+}
+.chart .rate-box > * {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #444;
+}
+.rate-box .value {
+  display: flex;
+  align-items: center;
+}
+.rate-box .value:hover {
+  color: #66bb6a;
+}
+.chart .value {
+  font-size: 30px;
+  cursor: pointer;
+}
+.rate-box .progress-bar {
+  border-width: 1px;
+  position: relative;
+  background-color: #cfd8dc91;
+
+  height: 10px;
+  border-radius: 100px;
+  width: 350px;
+}
+.ant-layout .ant-progress .ant-progress-bg{
+    background-color: #309980;
+}
+.rate-box .progress-bar .progress {
+  background-color: #66bb6a;
+  height: 100%;
+  border-radius: 100px;
+  transition: 300ms ease-in-out;
+}
+
+.global {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.one .fas {
+  color: #cfd8dc;
+}
+
+.two {
+  background: linear-gradient(to right, #66bb6a 0%, transparent 0%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out all;
+}
+
+.global > span {
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.rating-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+.rating-icons span {
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+}
+
+.total-reviews {
+  font-size: 25px !important;
+}
+
+
+.google-review {
+    margin-top: 20px;
+}
+.rating-review-item {
+    display: flex;
+    align-items: center;
+}
+.rating-review-item .left-rating {
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+.rating-review-item .left-rating .star-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.rating-review-item .left-rating .star-rating h3 {
+    margin: 0 5px 0 0;
+    font-size: 35px;
+}
+.rating-review-item .left-rating .star-rating sub{
+    font-size: 14px;
+}
+.right-rating{
+    flex: 1 1 auto;
+    padding-right: 15px;
+}
+.right-rating ul li{
+    display: flex;
+    gap: 10px;
+}
+.star-value{
+    display: flex;
+    align-items: center;
+}
+.progress{
+    flex: 1 1 100%;
+}
+.ant-layout .ant-progress-line{
+    margin-bottom: 4px;
+}
+.number-stars{
+    margin-bottom: 15px;
+}
+.ant-layout .ant-rate{
+    color: rgb(249, 162, 59);
+    font-size: 14px;
+}
+.number-review{
+    font-size: 12px;
+}
+
+#product-detail-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fdfdfd;
+    z-index: 10;
+    box-shadow:
+    0.6px 0px 4.7px rgba(0, 0, 0, 0.048),
+    2px 0px 15.9px rgba(0, 0, 0, 0.072),
+    9px 0px 71px rgba(0, 0, 0, 0.12);
+}
+#product-detail-footer  .button-group{
+    text-align: right;
+}
+#product-detail-footer  .ant-btn:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+}
+#product-detail-footer  .ant-btn:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#product-detail-footer  .ant-btn-default{
+    background-color: #2b2d41;
+    border-color: #2b2d41;
+    color: #ffffff;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+.footer-pricing small{font-size: 12px; margin-bottom: 5px; display: block;}
+.footer-pricing strong{
+    font-size: 22px;
+    color: #309980;
+}
+
+.product-detail-wrap + .bottom-nav-bar{
+    display: none;;
+}
+
